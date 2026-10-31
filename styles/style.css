@@ -17,17 +17,27 @@ html {
   inline-size: 100%;
   margin: 0;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
 
-h1, h2, h3, h4, p, ul, ol, li, blockquote, fieldset {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
   margin: 0;
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -40,7 +50,7 @@ ul, ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .visually-hidden {
@@ -107,7 +117,7 @@ ul, ol {
   justify-content: center;
   background-color: #545050;
   color: #fff;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.1;
@@ -134,7 +144,7 @@ ul, ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -154,6 +164,7 @@ ul, ol {
   align-items: center;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -168,7 +179,7 @@ ul, ol {
   border: none;
   border-block: 1px solid #fff;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   line-height: 22px;
   padding: 0;
@@ -200,7 +211,7 @@ ul, ol {
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: block;
   inline-size: 100%;
   block-size: 100%;
@@ -220,7 +231,7 @@ ul, ol {
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -241,6 +252,10 @@ ul, ol {
 .more-button {
   inline-size: 100%;
   block-size: 34px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .button:hover {
@@ -257,17 +272,17 @@ ul, ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
   text-transform: uppercase;
   color: #fff;
   inline-size: 259px;
-  block-size: 210px;
 }
 
 .content__accent {
@@ -279,12 +294,12 @@ ul, ol {
   min-block-size: 0;
   max-block-size: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
   position: relative;
   inline-size: 399px;
+  padding: 3px;
 }
 
 .content__list {
@@ -344,7 +359,7 @@ ul, ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
@@ -353,10 +368,11 @@ ul, ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  inline-size: 100%;
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
@@ -375,6 +391,7 @@ ul, ol {
   flex-shrink: 0;
 }
 
-button, .content__card-link {
+button,
+.content__card-link {
   cursor: pointer;
 }
